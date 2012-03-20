@@ -13,3 +13,9 @@ All work in this repository is under an MIT license.
 ![rtlsdrlna schematic](https://github.com/loxodes/rtl-sdr-lna/raw/master/rtlsdr_lna_sch.png)
 
 ![rtlsdrlna layout](https://github.com/loxodes/rtl-sdr-lna/raw/master/rtlsdr_lna_brd.png)
+
+
+It isn't a good idea to build this as is, I'm still working on optimizing the component values.
+The input return loss needs work. 
+
+![rtlsdrlna s2p](http://kl1xf.org/rtl_sdr_lna_s2p.png)
