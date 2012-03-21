@@ -1,23 +1,35 @@
-** rtl-sdr-lna **
+**rtl-sdr-lna**
+
+
 rtl-sdr-lna is an (untested) LNA for the ezcap digital TV USB stick.
 This is intended to improve the sensitivity of it for use as a cheap SDR.
+It isn't a good idea to build this as is, I'm still working on optimizing the component values.
+The amplifier simulates as unconditionally stable.
 
-See the following websites for more information:
+
+See the following websites for more information on the rtl-sdr:
 
 http://sdr.osmocom.org/trac/wiki/rtl-sdr
 
 http://www.reddit.com/r/rtlsdr
 
-The board is intended to take the place of the F connector.  
+The board is intended to take the place of the RF connector on the ezcap.  
 
-All work in this repository is under an MIT license.
 
 ![rtlsdrlna schematic](http://kl1xf.org/rtlsdr_lna_sch.png)
 
 ![rtlsdrlna layout](http://kl1xf.org/rtlsdr_lna_brd.png)
 
 
-It isn't a good idea to build this as is, I'm still working on optimizing the component values.
-The input return loss needs work, and I haven't yet checked stability... 
-
 ![rtlsdrlna s2p](http://kl1xf.org/rtl_sdr_lna_s2p.png)
+
+
+s2p files for simulation are available from Avago and Murata. I'm using ADS for simulation, qucs would be a free open source alternative.
+
+http://www.avagotech.com/pages/en/rf_microwave/amplifiers/low_noise_amplifiers/mga-62563/
+
+http://ds.murata.co.jp/software/simsurfing/en-us/index.html
+
+
+All layouts and schematics in this repository are under an MIT license.
+Feel free to contact me at kleinjt@ieee.org with suggestions, questions, or complaints.
