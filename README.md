@@ -17,7 +17,7 @@ The board is intended to take the place of the F connector.
 
 
 It isn't a good idea to build this as is, I'm still working on optimizing the component values.
-The input return loss needs work, and I haven't yet checked stability... 
+The input return loss needs work. The amplifier simulates as unconditionally stable. The s2p files for the amplifier are available from the Avago website, and passives from Murata.
 
 ![rtlsdrlna s2p](http://kl1xf.org/rtl_sdr_lna_s2p.png)
 
