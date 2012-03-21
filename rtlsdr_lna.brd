@@ -1580,16 +1580,16 @@ design rules under a new name.</description>
 <element name="U$1" library="mr_radar" package="SOT363" value="MGA-68563" x="13.0175" y="6.985" rot="R180"/>
 <element name="U1" library="SparkFun-PowerIC" package="SC70" value="MIC5205-3" x="16.8275" y="2.54"/>
 <element name="R1" library="rcl" package="R0402" value="4.3k" x="12.3825" y="4.1275" rot="R90"/>
-<element name="C1" library="rcl" package="C0402" value="100pF" x="15.875" y="6.6675"/>
+<element name="C1" library="rcl" package="C0402" value="330pF" x="15.875" y="6.6675"/>
 <element name="C2" library="rcl" package="C0402" value="68pF" x="14.9225" y="4.1275" rot="R90"/>
 <element name="C3" library="rcl" package="C0402" value="10nF" x="9.8425" y="3.4925" rot="R180"/>
-<element name="C4" library="rcl" package="C0402" value="100pF" x="6.35" y="7.9375"/>
-<element name="L1" library="SparkFun-Passives" package="0603" value="47nH" x="13.6525" y="4.1275" rot="R90"/>
+<element name="C4" library="rcl" package="C0402" value="330pF" x="6.35" y="7.9375"/>
+<element name="L1" library="SparkFun-Passives" package="0603" value="100nH" x="13.6525" y="4.1275" rot="R90"/>
 <element name="R2" library="rcl" package="R0402" value="DNP" x="17.4625" y="8.89" rot="R90"/>
 <element name="R3" library="rcl" package="R0402" value="JMP" x="19.05" y="6.6675"/>
 <element name="R4" library="rcl" package="R0402" value="DNP" x="20.955" y="8.89" rot="R90"/>
 <element name="C5" library="rcl" package="C0402" value="470pF" x="19.05" y="2.54" rot="R270"/>
-<element name="L2" library="SparkFun-Passives" package="C0402" value="6.8nH" x="9.525" y="7.9375"/>
+<element name="L2" library="SparkFun-Passives" package="C0402" value="4.7nH" x="9.525" y="7.9375"/>
 <element name="J$1" library="SparkFun-Connectors" package="SMA-EDGE" value="SMA_EDGE" x="2.54" y="5.3975" rot="R90"/>
 <element name="U$2" library="SparkFun-Connectors" package="U.FL" value="U.FL" x="31.75" y="6.6675" rot="R180"/>
 <element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="24.4475" y="1.905">
