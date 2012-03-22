@@ -7355,7 +7355,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="193.04" y="66.04" size="1.778" layer="97" font="vector">cut board and expose soldermask</text>
 <text x="193.04" y="63.5" size="1.778" layer="97" font="vector">(U.fl connector for testing)</text>
 <text x="78.74" y="96.52" size="1.778" layer="97" font="vector">airwire to USB 5V</text>
-<text x="106.68" y="38.1" size="1.778" layer="97">MGA-68263</text>
+<text x="106.68" y="38.1" size="1.778" layer="97">MGA-62563</text>
 <text x="236.22" y="-33.02" size="2.54" layer="94">0</text>
 <text x="147.32" y="-12.7" size="2.54" layer="94" font="vector">LNA for rtl-sdr, 100 MHz to 1.5 GHz</text>
 </plain>
