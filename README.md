@@ -1,7 +1,7 @@
 **rtl-sdr-lna**
 
 
-rtl-sdr-lna is an (untested) LNA for the ezcap digital TV USB stick.
+rtl-sdr-lna is a LNA for the ezcap digital TV USB stick (or other USB tuners).
 This is intended to improve the sensitivity of it for use as a cheap SDR.
 It isn't a good idea to build this as is, I'm still working on optimizing the component values.
 The amplifier simulates as unconditionally stable.
@@ -20,6 +20,9 @@ The board is intended to take the place of the RF connector on the ezcap.
 
 ![rtlsdrlna layout](http://kl1xf.org/rtlsdr_lna_brd.png)
 
+The noise figure measurements came out better than expected, I'm probably measuring incorrectly.
+
+![rtlsdrlna s2p](http://kl1xf.org/rtlsdrlna_nf_gain.png)
 
 ![rtlsdrlna s2p](http://kl1xf.org/rtl_sdr_lna_s2p.png)
 
