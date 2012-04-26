@@ -6,6 +6,7 @@ This is intended to improve the sensitivity of it for use as a cheap SDR.
 It isn't a good idea to build this as is, I'm still working on optimizing the component values.
 The amplifier simulates as unconditionally stable.
 
+![rtlsdrlna picture](http://kl1xf.org/rtlsdr.jpg)
 
 See the following websites for more information on the rtl-sdr:
 
@@ -22,7 +23,7 @@ The board is intended to take the place of the RF connector on the ezcap.
 
 The noise figure measurements came out better than expected, I'm probably measuring incorrectly.
 
-![rtlsdrlna s2p](http://kl1xf.org/rtlsdrlna_nf_gain.png)
+![rtlsdrlna gain and noise figure](http://kl1xf.org/rtlsdrlna_nf_gain.png)
 
 ![rtlsdrlna s2p](http://kl1xf.org/rtl_sdr_lna_s2p.png)
 
