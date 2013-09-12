@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18,7 +18,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -119,11 +119,11 @@
 <rectangle x1="0.3175" y1="10.16" x2="26.3525" y2="11.43" layer="30"/>
 <rectangle x1="0.3175" y1="0" x2="15.5575" y2="0.9525" layer="29"/>
 <rectangle x1="0.3175" y1="0" x2="26.3525" y2="0.9525" layer="30"/>
-<text x="6.0325" y="8.255" size="1.016" layer="121" font="vector">rf in</text>
-<text x="24.13" y="3.175" size="1.016" layer="121" font="vector">5v</text>
+<text x="5.3975" y="8.5725" size="1.016" layer="121" font="vector">rf in</text>
+<text x="24.13" y="3.175" size="0.8128" layer="121" font="vector">5v</text>
 <rectangle x1="0" y1="10.16" x2="11.7475" y2="11.7475" layer="29"/>
-<text x="26.9875" y="1.5875" size="1.016" layer="121" font="vector">rtlsdrlna</text>
-<text x="5.715" y="4.445" size="1.016" layer="121" font="vector">jon k.</text>
+<text x="26.9875" y="1.5875" size="0.8128" layer="121" font="vector">rtlsdrlna</text>
+<text x="5.3975" y="4.1275" size="1.016" layer="121" font="vector">jon k.</text>
 <rectangle x1="14.605" y1="10.16" x2="26.3525" y2="11.7475" layer="29"/>
 <rectangle x1="2.8575" y1="10.16" x2="14.605" y2="11.7475" layer="29"/>
 <wire x1="26.67" y1="11.43" x2="26.67" y2="7.9375" width="0.4064" layer="121" style="shortdash"/>
@@ -1407,7 +1407,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1580,26 +1580,70 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="mr_radar" package="SOT363" value="MGA-68563" x="13.0175" y="6.985" rot="R180"/>
-<element name="U1" library="SparkFun-PowerIC" package="SOT23-5" value="MIC5205-3" x="17.4625" y="3.4925"/>
-<element name="R1" library="rcl" package="R0402" value="1k" x="12.065" y="4.1275" rot="R90"/>
-<element name="C1" library="rcl" package="C0402" value="180pF" x="15.875" y="6.6675"/>
-<element name="C2" library="rcl" package="C0402" value="68pF" x="15.24" y="2.8575" rot="R270"/>
-<element name="C3" library="rcl" package="C0402" value="10nF" x="9.8425" y="3.4925" rot="R180"/>
-<element name="C4" library="rcl" package="C0402" value="180pF" x="7.3025" y="6.35"/>
-<element name="L1" library="SparkFun-Passives" package="0603" value="100nH" x="13.6525" y="4.1275" rot="R90"/>
-<element name="R2" library="rcl" package="R0402" value="DNP" x="17.4625" y="8.89" rot="R90"/>
-<element name="R3" library="rcl" package="R0402" value="JMP" x="19.05" y="6.6675"/>
-<element name="R4" library="rcl" package="R0402" value="DNP" x="20.955" y="8.89" rot="R90"/>
-<element name="C5" library="rcl" package="C0402" value="470pF" x="21.9075" y="4.1275" rot="R270"/>
-<element name="L2" library="SparkFun-Passives" package="C0402" value="4.7nH" x="10.4775" y="6.985" rot="R90"/>
+<element name="U$1" library="mr_radar" package="SOT363" value="MGA-68563" x="13.0175" y="6.985" smashed="yes" rot="R180">
+<attribute name="VALUE" x="11.3665" y="7.366" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="U1" library="SparkFun-PowerIC" package="SOT23-5" value="MIC5205-3" x="17.4625" y="3.4925" smashed="yes">
+<attribute name="VALUE" x="16.51" y="3.302" size="0.4064" layer="27"/>
+</element>
+<element name="R1" library="rcl" package="R0402" value="1k" x="12.065" y="4.1275" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.3825" y="1.27" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="13.97" y="3.4925" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C1" library="rcl" package="C0402" value="180pF" x="15.875" y="6.6675" smashed="yes">
+<attribute name="NAME" x="15.24" y="7.3025" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.24" y="4.7625" size="1.27" layer="27"/>
+</element>
+<element name="C2" library="rcl" package="C0402" value="68pF" x="15.24" y="2.8575" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.9225" y="5.715" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="13.335" y="3.4925" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C3" library="rcl" package="C0402" value="10nF" x="9.8425" y="3.4925" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.6675" y="3.4925" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="10.4775" y="5.3975" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C4" library="rcl" package="C0402" value="180pF" x="7.3025" y="6.35" smashed="yes">
+<attribute name="NAME" x="6.6675" y="7.3025" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="6.6675" y="4.445" size="1.27" layer="27"/>
+</element>
+<element name="L1" library="SparkFun-Passives" package="0603" value="100nH" x="13.6525" y="4.1275" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.5255" y="1.3335" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="14.7955" y="3.1115" size="0.4064" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="R2" library="rcl" package="R0402" value="DNP" x="17.4625" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.51" y="8.5725" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="19.3675" y="8.255" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R3" library="rcl" package="R0402" value="JMP" x="19.05" y="6.6675" smashed="yes">
+<attribute name="NAME" x="18.415" y="7.3025" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="18.415" y="4.7625" size="1.27" layer="27"/>
+</element>
+<element name="R4" library="rcl" package="R0402" value="DNP" x="20.955" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.0025" y="8.5725" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="22.86" y="8.255" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C5" library="rcl" package="C0402" value="470pF" x="21.9075" y="4.1275" smashed="yes" rot="R270">
+<attribute name="NAME" x="22.86" y="4.445" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="20.0025" y="4.7625" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="L2" library="SparkFun-Passives" package="C0402" value="4.7nH" x="10.4775" y="6.985" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.779" y="7.0485" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="11.6205" y="5.9055" size="0.4064" layer="27" rot="R90"/>
+</element>
 <element name="J$1" library="SparkFun-Connectors" package="SMA-EDGE" value="SMA_EDGE" x="2.54" y="3.81" rot="R90"/>
 <element name="U$2" library="SparkFun-Connectors" package="U.FL" value="U.FL" x="31.75" y="6.6675" rot="R180"/>
-<element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="24.765" y="1.905">
-<attribute name="TP_SIGNAL_NAME" value="" x="46.355" y="-26.035" size="1.778" layer="27" display="off"/>
+<element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="24.765" y="1.905" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="24.765" y="-0.635" size="1" layer="37"/>
+<attribute name="VALUE" x="23.749" y="0.762" size="0.0254" layer="27"/>
 </element>
-<element name="C6" library="rcl" package="C0805" value="4.7uF, TANT" x="9.525" y="1.5875" rot="R180"/>
-<element name="C7" library="rcl" package="C0603" value=".1uF" x="20.0025" y="2.54" rot="R90"/>
+<element name="C6" library="rcl" package="C0805" value="4.7uF, TANT" x="9.525" y="1.5875" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.35" y="1.905" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="10.795" y="4.1275" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C7" library="rcl" package="C0603" value=".1uF" x="20.0025" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.3675" y="4.1275" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="21.9075" y="1.905" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1806,14 +1850,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.43" y1="7.635" x2="11.43" y2="7.62" width="0.6096" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="18,29,c0579a6eb042986f"/>
-<approved hash="18,29,aa12eefedc321a2f"/>
-<approved hash="18,29,f180ced006c3bd75"/>
-<approved hash="18,29,c3b27a302bec501f"/>
-<approved hash="18,29,1d07990a34ba74d1"/>
-<approved hash="18,29,b3436baa700d4fa8"/>
-</errors>
 </board>
 </drawing>
 </eagle>
