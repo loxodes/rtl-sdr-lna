@@ -30,4 +30,4 @@ http://ds.murata.co.jp/software/simsurfing/en-us/index.html
 The PCB can be ordered from OSH Park for $3.15 here: http://oshpark.com/shared_projects/ExVzBewI
 
 All layouts and schematics in this repository are under an MIT license.
-Feel free to contact me at kleinjt@ieee.org with suggestions, questions, or complaints.
+Feel free to contact me at jtklein@alaska.edu with suggestions, questions, or complaints.
